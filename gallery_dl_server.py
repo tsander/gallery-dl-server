@@ -4,6 +4,7 @@ import argparse
 import os
 import gallery_dl
 
+from gallery_dl import config
 from bottle import route, run, Bottle, request, static_file
 from queue import Queue
 from threading import Thread
@@ -18,6 +19,7 @@ parser.add_argument("--zip_downloads",
                     choices=['False', 'True'], 
                     help="Zip files into CBZ after download")
 args = parser.parse_args()
+config.load()
 
 app = Bottle()
 DL_THREAD = ThreadPoolExecutor(max_workers=2)
