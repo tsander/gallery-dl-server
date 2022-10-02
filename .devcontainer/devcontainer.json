@@ -41,7 +41,7 @@
 		}
 	},
 	"mounts": [
-		"source=${localEnv:HOME}/.gallery-dl.conf,target=/etc/gallery-dl.conf,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/gallery-dl.conf,target=/etc/gallery-dl.conf,type=bind,consistency=cached",
 		"source=${localEnv:HOME}/gallery-dl/,target=/usr/src/app/gallery-dl/gallery-dl/,type=bind,consistency=cached"
 	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
