@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--zip_downloads", 
                     nargs='?',
                     const=1,
-                    default='True',
+                    default='False',
                     choices=['False', 'True'], 
                     help="Zip files into CBZ after download")
 args = parser.parse_args()
